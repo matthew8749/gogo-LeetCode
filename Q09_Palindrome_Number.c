@@ -2,13 +2,15 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-bool isPalindrome();
+bool isPalindrome(int x);
 
 int main(){
 
   int x;
   x = 1210;
-  isPalindrome(x);
+  bool ans;
+  ans = isPalindrome(x);
+  printf("%s", ans ? "true" : "false");
 
 }
 
